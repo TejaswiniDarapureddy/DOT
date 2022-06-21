@@ -1,0 +1,62 @@
+<html>
+<head>
+<title> DOT Sytem </title>
+</head>
+
+<body align="center" bgcolor="#FED8B1">
+<img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Osu_ath_brand.png" height=100px width=150px />
+<br></br>
+<h1> Degree On Time System </h1>
+<br></br>
+<br></br>
+
+<form>
+	<label for="username">Username:</label>
+	<input type="text" id="user" name="username" required><br>
+	<br>
+	<label for="pwd">Password:</label>
+	<input type="password" id="pwd" name="pwd" required>
+	<br> </br>
+	<button onclick="myFunction()">Submit</button>
+	 &nbsp;&nbsp; &nbsp; 
+	<input type="reset" value="Reset" id="res">
+<br></br>
+<br></br>
+<a href="ForgotPassword.html" >Forgot Password?</a>
+ &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+<a href="UserGuide.txt">User Guide</a>
+<br></br>
+<br></br><br></br>
+<br></br>
+<br></br><br></br>
+<br></br>
+</form>
+<p align="left"><b><u>Instructions </b></u></p>
+<p align="left">1. If you are login as student then enter username as "student@okstate.edu" and password can be anything. Click on submit</p>
+<p align="left">2. If you are  login as faculty then enter username as "faculty@okstate.edu" and password can be anything. Click on submit.</p>
+<p align="left">3. If you logged in as faculty, it will ask for student id. Enter test id: A20343337</p>
+<script>
+function myFunction() {
+	var a = document.getElementById("user").value;
+	
+	if ( a== 'student@okstate.edu')
+	{
+		window.open("declared pos.html","_blank");
+			
+	}
+	else if(a=='faculty@okstate.edu')
+	{
+		window.event.returnValue = false;
+		window.location.href="FacultyWork.html";
+	}
+	else
+	{
+		window.event.returnValue = false;
+		window.location.href = "Login page.html"	
+	}
+	
+		
+}
+</script>
+</body>
+</hmtl>

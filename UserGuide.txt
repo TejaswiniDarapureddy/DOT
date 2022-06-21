@@ -1,0 +1,11 @@
+Below are steps for logging.
+
+1. The POC for DOT is under STW_IT_AREAS section on Teams, Dowload the folder and extract the files.
+2. Click on Login page, it will open the login page on web.
+3. Login Details: 
+
+	a. If you are login as student then enter username as "student@okstate.edu" and password can be anything. Click on submit
+
+	b. If you are login as faculty then enter username as "faculty@okstate.edu" and password can be anything. Click on submit.
+
+	c. If you logged in as faculty, system will prompt for student id. Enter test id: A20343337

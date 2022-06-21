@@ -1,0 +1,59 @@
+<html>
+<head>
+<title> DOT Sytem </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body align="center" bgcolor="#FED8B1">
+<img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Osu_ath_brand.png" height=100px width=150px />
+<br></br>
+<h1> Degree On Time System For Faculty</h1>
+<br></br>
+<br></br>
+
+<h3> To view the Student's Plan of Course</h3>
+
+<form style=" width: 50vw; margin-left : 25vw;>
+
+	<label for="StudentID">Enter Student ID:</label>
+	<input type="text" id="user" name="username" required><br>
+	<br>
+	<button onclick="myFunction()">Submit</button>
+	 &nbsp;&nbsp; &nbsp; 
+	<input type="reset" value="Reset" id="res">
+<br></br>
+<br></br>
+
+</form>
+<script>
+function myFunction() {
+	var a=document.getElementById("user").value;
+	if(a=='A20343337')
+	{
+		window.event.returnValue = false;
+		window.location.href="sect.html";
+	}
+	else
+	{
+		alert("Incorrect StudentID");
+	}
+	
+}
+</script>
+<h3> To view other details </h3>
+<a href="GroupsSameCourse.csv"> Download file consisting of Students who have taken Same Course</a>
+<br></br>
+<a href="GroupsDeclaredPOS.csv"> Download file consisting Students who have Declared POS</a>
+<br></br>
+<a href="BestPOS.csv"> Download file consisting of students with Best POS</a><br>
+
+ <div style="float:right">
+<form align="right">
+  <label class="logoutLblPos">
+  <a href="Logout.html">Logout</a>
+  </label>
+</form>
+</div>
+
+</body>
+
+</hmtl>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one
+{
+	border : 2px outset gray;
+}
+</style>
+</head>
+<body align="center" bgcolor="#FED8B1" >
+<img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Osu_ath_brand.png" height=100px width=150px />
+<br></br>
+<h1>Degree On Time System </h1>
+<br></br>
+<br></br>
+<br></br>
+<script>
+function myfunction()
+{
+
+	var a = document.querySelector('input[type=radio][name=POS]:checked');
+	if(a.value=="Yes")
+	{
+		
+		window.open("stud-sect.html","_self");
+	}
+	else
+	{
+		window.open("POS.html","_self");
+	}
+	
+}
+</script>
+
+<form >
+<label for="pos"><h3>Have you declared your POS?</h3></label>
+
+<br></br>
+
+<input type="radio" id="yes" name="POS" value="Yes">
+<label for="yes">YES</label>
+<br></br>
+
+<input type="radio" id="no" name="POS" value="No">
+<label for="no">NO</label>
+<br></br>
+<button type="button" onclick="myfunction()">submit</button>
+</form>
+</body>
+</html>

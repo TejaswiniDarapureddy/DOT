@@ -1,0 +1,53 @@
+<html>
+<head>
+<title> DOT Sytem </title>
+
+</head>
+<body align="center" bgcolor="#FED8B1">
+<img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Osu_ath_brand.png" height=100px width=150px />
+<br></br>
+<h1> Degree On Time System </h1>
+<br></br>
+<br></br>
+<form style=" width: 50vw; margin-left : 25vw;>
+	<label for="major">Select your Major:</label>
+	<select id="major">
+		<option value="CS" id="cs">Computer Science</option>
+<option value="MIS" id="mis">Management & Information Systems</option>
+<option value="IEM" id="iem">Industrial Engineering & Management</option>
+<option value="Nur" id="nur">Nursing</option>
+<option value="VET" id="vet">Veterinary Medicine</option>
+<option value="Act" id="act">Account</option>
+<option value="CIVIL" id="civil">Civil Engineering</option>
+<option value="BAN" id="ban">Bussiness Analytics</option>
+<option value="PYS" id="psy">Psychology</option>
+<option value="BLANK" id="blank"> </option>
+</Select>
+
+	<button onclick="myFunction()">Submit</button>
+	 &nbsp;&nbsp; &nbsp; 
+	<input type="reset" value="Reset" id="res">
+<br></br>
+<br></br>
+
+</form>
+<script>
+function myFunction() {
+	var a=document.querySelector('#major');
+	var b= a.value;
+	if(b=='BLANK')
+	{
+	
+		window.event.returnValue = false;
+		window.location.href = "ClosetPOS.html"
+	}
+	else
+	{
+		alert("Your Major has been submitted successfully");
+		window.event.returnValue = false;
+		window.location.href = "Login page.html"
+	}
+}
+</script>
+</body>
+</html>
